@@ -1,0 +1,105 @@
+
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()"
+      ><img
+        src="https://compfie.aparajitha.com/wp-content/themes/compfie_wp/images/logo.png"
+    /></a>
+  </div>
+ 
+</div>
+
+<div class="header-container1" >
+  <nb-actions size="small">
+    <nb-action class="control-item" >
+    <nb-action class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+    </nb-action>
+        <nb-action class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Solutions</a>
+        </nb-action>
+        <nb-action class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Compfie Law</a
+          >
+        </nb-action>
+        <nb-action class="nav-item dropdown">
+          <a
+            class="nav-link active dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           
+            
+           
+            <li><a class="dropdown-item" href="#">Shops & Establishment Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Factory Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Employee Provident Fund (EPF) Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">ESI Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Professional Tax Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">GST Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">GST Filling.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">TDS Return Filling.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Trade Mark Registration.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Search for Trade Mark.</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Logo Design</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Trade Mark Renewal</a></li>
+          </ul>
+        </nb-action>
+        <nb-action class="nav-item dropdown">
+          <a
+            class="nav-link active dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Country
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Srilanka</a></li>
+            <li><a class="dropdown-item" href="#">Singapore</a></li>
+            <li><a class="dropdown-item" href="#">UAE</a></li>
+            <li><a class="dropdown-item" href="#">Austrelia</a></li>
+          </ul>
+        </nb-action>
+        <nb-action class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </nb-action>
+
+      </nb-action>
+      <nb-action>
+        <a id="logbtn" class="nav-link active" aria-current="page" href="/pages/ui-features/login">Login</a>
+        </nb-action>
+      <nb-user
+        [nbContextMenu]="userMenu"
+        [onlyPicture]="userPictureOnly"
+        [name]="user?.name"
+        [picture]="user?.picture"
+      >
+      </nb-user>
+
+  </nb-actions>
+</div>
+
